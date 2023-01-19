@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'ringbearermedium';
+    src: url('../font/ringbearer-webfont.woff2') format('woff2'),
+         url('../font/ringbearer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-family: 'ringbearermedium', sans-serif;
+}
+
+.bg-custom {
+    background-color: #DCC091;
+}
+
+.bg-custom-footer {
+    background-color: #A29477;
+}
+
+.bg-custom-boxs {
+    background-color: #66826B;
+    color: black;
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet"> <!--Import des Icones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"><!--Import BootStrap -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="icon" href="assets/images/logo.svg" >
+    <title>La Bataille des Cinq Armées</title>
+</head>
+<body class="bg-custom">
+    <header>
+        <h1 class="text-center my-3">La Bataille des Cinq Armées</h1>
+    </header>
+    <main>
+        <section class="row ">
+            <section class="iaHealthBar text-end col" id="iaHealthBar">
+                <i class="fa-solid fa-heart fa-3x"></i>  
+                <i class="fa-solid fa-heart fa-3x"></i>
+                <i class="fa-solid fa-heart fa-3x"></i>
+            </section>  
+
+            <section class="col text-end">
+                            <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Règles
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Règles</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Le Hobbit tue l'Elfe, <br> L'Elfe transperce l'Orc, <br> L'Orc mange l'Humain, <br> L'Humain empoisonne le Nain, <br> Le Nain écrabouille le Hobbit, <br> Le Hobbit décapite l'Humain, <br> L'Humain assassine l'Elfe, <br> Le Elfe repousse le Nain, <br> Le Nain détruit l'Orc, <br> L'Orc écrase le Hobbit.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Compris !</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>  
+        
+        <section class="text-center d-none" id="playButton">  
+            <a href="" class="col-2 bg-custom-boxs text-primary text-center mt-2 text-black px-4" id="resetButton">Rejouer</a>
+        </section>
+
+        <section id="animationZone" class="row ">
+            <!-- Place Holder Animation -->
+
+        </section>
+        
+        <div id="carousel">
+            <section class="d-md-none">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/elf.png" class="d-block w-100 text-center" id="elfeDesktop" alt="elfe">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/orc.png" class="d-block w-100 text-center" id="orcDesktop" alt="orc">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/hobbit.png" class="d-block w-100 text-center" id="hobbitDesktop" alt="hobbit">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/knight.png" class="d-block w-100 text-center" id="humainDesktop" alt="humain">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/dwarf.png" class="d-block w-100 text-center" id="nainDesktop" alt="nain">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </section> 
+        </div>
+
+
+
+        <section class="text-center d-none d-md-flex">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <img src="assets/images/elf.png" class="d-block w-75 text-center" id="elfe" alt="elfe">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/orc.png" class="d-block w-75 text-center" id="orc" alt="orc">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/hobbit.png" class="d-block w-75 text-center" id="hobbit" alt="hobbit">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/knight.png" class="d-block w-75 text-center" id="humain" alt="humain">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/dwarf.png" class="d-block w-75 text-center" id="nain" alt="nain">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+            
+        <section class="playerHealthBar text-center my-5" id="playerHealthBar">
+            <i class="fa-solid fa-heart fa-3x"></i>  
+            <i class="fa-solid fa-heart fa-3x"></i>
+            <i class="fa-solid fa-heart fa-3x"></i>
+        </section>  
+        
+        <section class="d-none d-md-flex bg-custom-footer row justify-content-evenly ">
+            <a href="" class="col-2 bg-custom-boxs text-center mt-2" id="elfeDesktop">
+                <img src="assets/images/elf.png" class="w-25">
+                Elfe
+                <img src="assets/images/elfReversed.png" class="w-25">
+            </a>
+            <a href="" class="col-2 bg-custom-boxs text-center mt-2" id="orcDesktop">
+                <img src="assets/images/orc.png" class="w-25">
+                Orc
+                <img src="assets/images/orcReversed.png" class="w-25">
+            </a>
+            <a href="" class="col-2 bg-custom-boxs text-center mt-2" id="hobbitDesktop">
+                <img src="assets/images/hobbit.png" class="w-25">
+                Hobbit
+                <img src="assets/images/hobbitReversed.png" class="w-25">
+            </a>
+            <a href="" class="col-2 bg-custom-boxs text-center mt-2" id="humainDesktop">
+                <img src="assets/images/knight.png" class="w-25">
+                Humain
+                <img src="assets/images/knightReversed.png" class="w-25">
+            </a>
+            <a href="" class="col-2 bg-custom-boxs text-center mt-2" id="nainDesktop">
+                <img src="assets/images/dwarf.png" class="w-25">
+                Nain
+                <img src="assets/images/dwarfReversed.png" class="w-25">
+            </a>
+        </section>
+        
+        <section id="footer" class="d-flex align-items-end row">
+            <h3 class="col">Taux de Victoire : </h3>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script><!--Import Bootstrap -->
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
